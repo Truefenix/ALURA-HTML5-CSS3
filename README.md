@@ -17,7 +17,7 @@
 
 ###  📜 DESCRIÇÃO:
  - Aprender a estrutura da página HTML.
- - Navegar entre páginas web.
+ - Navegar entre as páginas web.
  - Conhecer reset.css e o posicionamento pelo CSS.
  - Lidar com bordas e pseudo-classes CSS.
  - Criar formulários complexos.
