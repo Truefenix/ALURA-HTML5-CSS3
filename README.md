@@ -1,6 +1,6 @@
-<h1>
+<h3 text-align="center">
 📚 4 CURSOS DE HTML5 E CSS3 - ALURA
-</h1>
+</h3>
 
 ##  🔖 Informações
 
