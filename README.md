@@ -4,7 +4,7 @@
 
 ##  🔖 Informações
 
-- Uma trilha com 4 cursos de HTML5 e CSS3, cada curso com projetos diferentes e níveis diferentes.
+ <p>Uma trilha com 4 cursos de HTML5 e CSS3, cada curso com projetos diferentes e níveis diferentes.</p>
 
  - HTML5 e CSS3 parte 1: crie uma página da Web.
  - HTML5 e CSS3 parte 2: posicionamento, listas e navegação.
