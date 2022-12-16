@@ -33,6 +33,10 @@ nav a:hover {
     text-decoration-line: underline;
 }
 
+main a{
+    color: #000000;
+}
+
 .produtos {
     width: 940px;
     margin: 0 auto;
