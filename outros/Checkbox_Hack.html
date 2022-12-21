@@ -1,0 +1,40 @@
+<!--Ele faz o conteudo aparecer e desaparecer pelo html e css-->
+<style>
+    .control-me::after {
+    content: "😃";
+    font-size: 100px;
+}
+#toggle:checked ~ .control-me::after {
+    content: "😩";
+}
+
+label {
+    background: #A5D6A7;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -100vw;
+    
+    /* Note, you may want to position the checkbox over top the label and set the opacity to zero instead. It can be better for accessibilty on some touch devices for discoverability. */
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font: 900 24px/1.4 -system-ui, sans-serif;
+}
+
+</style>
+<div>
+    <label for="toggle">Toggle</label>
+    
+    <input type="checkbox" id="toggle" class="visually-hidden">
+
+    <div class="control-me"></div>
+</div>
