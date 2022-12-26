@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Clique em CSS</title>
+		
+		<style>
+		.elemento {
+		  background:rgb(255, 0, 0);
+		  width: 200px;
+		  height: 100px;
+		  position: relative;
+		  -webkit-transition: all 1s ease-in-out;
+		  -moz-transition: all 1s ease-in-out;
+		  -o-transition: all 1s ease-in-out;
+		  transition: all 1s ease-in-out;
+		}
+		#muda {
+		  display: none;
+		}
+		#muda:checked + .elemento {
+		  background:rgb(4, 0, 255);
+		  width: 500px;
+		}
+		</style>
+	</head>
+	<body>
+		<input type="checkbox" id="muda">
+		  <div class="elemento">
+			<label class="label-muda" for="muda">Clique em mim</label>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,152 @@
+body {
+    /* só mostra aquilo dentro do X do body e esconde tudo fora do X -> X é para o lado direito*/ 
+    overflow-x: hidden;
+}
+
+/* reset posição */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* links estilo */
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+/*a:hover {
+    opacity: 0.7;
+}*/
+
+/* estilo da lista */
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+/* Estilo da navegação */
+nav {
+    display: flex; /* um do lado do outro */
+    justify-content: space-around; /* espaço ao redor se metade entre eles */
+    align-items: center /* alinhar o nav centro */;
+
+    /* estilo do texto */
+    font-family: system-ui, -apple-system, Arial, 
+                    Helvetica, sans-serif sans-serif;
+
+    /* background */
+    background: #23232e; /* cor roxa black */
+    height: 8vh;
+}
+
+/* principal - imagem de fundo */
+main {
+    /* imagem de fundo */
+    background: url(bg.jpg) no-repeat
+    center center;
+
+    /*Tamanho caso o monitor seja maior que a img*/
+    background-size: cover;
+
+    height: 92vh; /*Altura da img*/
+}
+
+/* classe lista ul */
+.nav-list {
+
+        /* posição */
+        position: absolute;
+        top: 8vh;
+        right: 0; /* vai aparecer a direita */
+
+        /* largura e tamanho */
+        width: 50%; /* 50% da pagina de visualização */
+        height: 92vh;
+
+        background: #23232e; /* cor de fundo */
+
+        /* posição dos elementos */
+        flex-direction: column;
+        align-items: center;
+
+    /* coloca o menu para fora do corpo */
+    justify-content: space-around;
+    transform: translate(100%);
+}
+
+/* .active é a classe -> através do js*/
+.nav-list.active {
+    /* quando nav-list estiver ativa, o translate voltará a posição 0*/
+    transform: translate(0);
+}
+
+/* lista */
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+/* 3 risco do menu */
+.mobile-menu {
+
+    cursor: pointer;
+    /* quando passar por cima aparece a mão para clicar */
+}
+
+/* div da classe mobile-menu */
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+@media (max-width: 1000px) {
+
+    body {
+        /* só mostra aquilo dentro do X do body e esconde tudo fora do X -> X é para o lado direito*/ 
+        overflow-x: hidden;
+    }
+ 
+    /* reponsivo da aba menu */
+    .nav-list {
+        /* posição */
+        position: absolute;
+        top: 8vh;
+        right: 0; /* vai aparecer a direita */
+
+        /* largura e tamanho */
+        width: 50%; /* 50% da pagina de visualização */
+        height: 92vh;
+
+        background: #23232e; /* cor de fundo */
+
+        /* posição dos elementos */
+        flex-direction: column;
+        align-items: center;
+
+
+        /* coloca o menu para fora do corpo */
+        justify-content: space-around;
+        transform: translate(100%);
+    }
+
+    /* lista */
+    .nav-list li {
+        margin-left: 0;
+
+        opacity: 0; /* lista invísivel do menu */
+    }
+
+    .mobile-menu {
+        display: block; /* se ajusta ao reponsivo sozinho */
+    }
+
+    /* .active é a classe -> através do js*/
+    .nav-list.active {
+        /* quando nav-list estiver ativa, o translate voltará a posição 0*/
+        transform: translate(0);
+    }
+}

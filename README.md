@@ -34,7 +34,6 @@
  - Saber como lidar com opacidade e sombra.
  - Entender sobre o Viewport e design responsivo.
 
-
 #  🔗 Link dos Certificados
 
 ```bash
