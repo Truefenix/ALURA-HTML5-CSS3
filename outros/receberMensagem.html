@@ -1,0 +1,18 @@
+<meta charset="utf-8">
+
+    <textarea id="mensagem"></textarea>
+
+    <button id="botao"></button>
+
+    <textarea id="resultado"></textarea>
+
+<script>
+
+    var mensagem = document.getElementById("mensagem").value;
+    var resultado = document.getElementById("resultado").value;
+
+    document.getElementById("botao").addEventListener("click", function(texto) {
+
+        document.getElementById("resultado").value = document.getElementById("mensagem").value;
+    })
+</script>
