@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+
+    <textarea id="mensagem"></textarea>
+
+    <button id="botao"></button>
+
+    <textarea id="resultado"></textarea>
+
+<script>
+
+    var mensagem = document.getElementById("mensagem").value;
+    var resultado = document.getElementById("resultado").value;
+
+    document.getElementById("botao").addEventListener("click", function(texto) {
+
+        var texto = document.getElementById("mensagem").value;
+
+        // Só passa aquilo que estiver no Array.
+        var caracteres = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+                             'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 
+                                'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
+                                    'y', 'z'];
+
+        for(var a = 0; a < caracteres.length; a++) {
+            
+            if(texto.includes(caracteres[a])) {
+
+                document.getElementById("resultado").value = document.getElementById("mensagem").value;
+                break;
+            } else {
+
+                alert("erro");
+                break;
+            }
+        }
+    })
+</script>
