@@ -44,6 +44,8 @@ https://cursos.alura.com.br/user/eduardo-roqueamaral09/course/html5-css3-primeir
 https://cursos.alura.com.br/user/eduardo-roqueamaral09/course/html5-css3-posicionamento-listas-navegacao/certificate
 
 https://cursos.alura.com.br/user/eduardo-roqueamaral09/course/html5-css3-formularios-tabelas/certificate
+
+https://cursos.alura.com.br/user/eduardo-roqueamaral09/course/html5-css3-avancando-css/certificate
 ```
 ##  🐠 Aluno
 <table align="center">
